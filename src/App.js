@@ -28,7 +28,7 @@ function App() {
             <Switch>
               <Route
                 exact path="/countries/:alpha3Code"
-                component={() => <CountryDetails countries={countries} />}
+                component={(routeProps) => <CountryDetails {...routeProps} countries={countries} />}
               />
             </Switch>
           </div>
